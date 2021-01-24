@@ -1,4 +1,3 @@
-import AboutSection from "./components/AboutSection";
 //import pages
 import AboutUs from "./pages/AboutUs";
 

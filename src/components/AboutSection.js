@@ -26,7 +26,7 @@ const AboutSection = () => {
         </p>
         <button>Contact Me</button>
       </div>
-      <img src={home1} alt="ProfilePhoto" /> //change to picture of me&Logo
+      <img src={home1} alt="ProfilePhoto" /> {/*change to picture of me&Logo*/}
     </div>
   );
 };

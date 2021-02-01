@@ -21,7 +21,7 @@ const ServicesSection = () => {
           <Card>
             <div className="icon">
               <img src={clock} alt="Clock" />
-              <h3></h3>
+              <h3>Another Section</h3>
             </div>
             <p>Lorem ipsum dolor sit amet, c</p>
           </Card>

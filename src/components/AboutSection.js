@@ -1,39 +1,43 @@
 import React from "react";
 import home1 from "../img/home1.png";
 //Styled
-import styled from "styled-components";
 import { About, Description, Image, Hide } from "../styles";
+//Framer Motion
+import { motion } from "framer-motion";
+import { titleAnim, fade, photoAnim } from "../animation";
+import Wave from "./Wave";
 
 //change name to <Liam McKenna  />
 const AboutSection = () => {
   return (
     <About>
       <Description>
-        <div className="title">
+        <motion.div>
           <Hide>
-            <h2>Liam McKenna</h2>
+            <motion.h2 variants={titleAnim}>Liam McKenna</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2 variants={titleAnim}>
               A Design <span>&</span> Development
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>Portfolio</h2>
+            <motion.h2 variants={titleAnim}>Portfolio</motion.h2>
           </Hide>
-        </div>
-        <p>
+        </motion.div>
+        <motion.p variants={fade}>
           MERN full stack developer based in Dublin. Degree in Information
           Systems encompassing Software Engineering, Machine Learning, Web
           Applications, Databases and Cloud Systems
-        </p>
-        <button>Contact Me</button>
+        </motion.p>
+        <motion.button variants={fade}>Contact Me</motion.button>
       </Description>
 
       <Image>
-        <img src={home1} alt="ProfilePhoto" />{" "}
+        <motion.img variants={photoAnim} src={home1} alt="ProfilePhoto" />{" "}
         {/*change to picture of me&Logo*/}
       </Image>
+      <Wave />
     </About>
   );
 };

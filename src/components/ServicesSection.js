@@ -10,9 +10,22 @@ import home2 from "../img/home2.png";
 import styled from "styled-components";
 import { About, Description, Image, Hide } from "../styles";
 
+//Animations
+import { scrollReveal } from "../animation";
+
+//functions
+import { useScroll } from "./useScroll";
+
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
+
   return (
-    <Services>
+    <Services
+      variants={scrollReveal}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <Description>
         <h2>
           Tech Stack <span>&</span> skills
@@ -68,6 +81,9 @@ const Services = styled(About)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1300px) {
+    justify-content: space-around;
+  }
 `;
 
 const Card = styled.div`

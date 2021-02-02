@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import svgimage from "../img/topography.svg";
+
 const GlobalStyle = createGlobalStyle`
 *{
     margin:0;
@@ -6,9 +8,20 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
+html{
+    @media (max-width: 1700px){
+        font-size: 75%;
+    }
+    
+}
+
+
 body{
-    background: #1b1b1b;
+    //background: #1b1b1b;
+    background: url(${svgimage});
+    background-color: #0F1113;
     font-family: 'inter', sans-serif;
+    overflow-x: hidden;
 }
 
 button{

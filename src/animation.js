@@ -30,7 +30,19 @@ export const fade = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    tranition: { ease: "easeOut", diration: 0.75 },
+    tranition: { ease: "easeOut", duration: 0.75 },
+  },
+};
+export const scrollReveal = {
+  hidden: {
+    opacity: 0,
+    scale: 1.2,
+    transition: { duration: 0.75 },
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    tranition: { duration: 0.75 },
   },
 };
 
@@ -53,7 +65,7 @@ export const lineAnim = {
     transition: {
       ease: "easeOut",
       duration: 1,
-      delay: 10,
+      delay: 1,
     },
   },
 };
@@ -65,6 +77,19 @@ export const slider = {
   },
   show: {
     x: "100%",
+    skew: "0deg",
+    transition: {
+      ease: "easeOut",
+      duration: 1,
+    },
+  },
+};
+
+export const swoopSlider = {
+  hidden: {
+    skew: "45deg",
+  },
+  show: {
     skew: "0deg",
     transition: {
       ease: "easeOut",

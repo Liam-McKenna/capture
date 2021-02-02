@@ -5,6 +5,8 @@ import { MovieState } from "../movieState";
 //framer Motion
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+//comps
+import ScrollTop from "../components/ScrollTop";
 
 const MovieDetail = () => {
   const history = useHistory();
@@ -44,6 +46,7 @@ const MovieDetail = () => {
           <ImageDisplay>
             <img src={movie.secondaryImg} alt="secondaryImg" />
           </ImageDisplay>
+          <ScrollTop />
         </Details>
       )}
     </>
@@ -77,6 +80,10 @@ const Awards = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 1500px) {
+    display: block;
+    margin: 2rem 2rem;
+  }
 `;
 
 const ImageDisplay = styled.div`

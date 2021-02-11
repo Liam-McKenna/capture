@@ -3,12 +3,14 @@ import GlobalStyle from "./components/GlobalStyle";
 
 //Import Navigation Bar
 import Nav from "./components/Nav";
+import NavUltra from "./components/NavUltra";
 
 //import pages
 import AboutUs from "./pages/AboutUs";
 import OurWork from "./pages/OurWork";
 import ContactUs from "./pages/ContactUs";
 import MovieDetail from "./pages/MovieDetail";
+import ProjectDetails from "./pages/ProjectDetails";
 //router
 import { Switch, Route, useLocation } from "react-router-dom";
 //framer motion
@@ -21,7 +23,8 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <Nav />
+      {/* <Nav /> */}
+      <NavUltra />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
@@ -33,7 +36,8 @@ function App() {
           </Route>
 
           <Route path="/work/:id">
-            <MovieDetail />
+            {/* <MovieDetail /> */}
+            <ProjectDetails />
           </Route>
 
           <Route path="/contact">

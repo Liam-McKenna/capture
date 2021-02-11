@@ -64,7 +64,7 @@ a{
 }
 p{
     padding: 3rem 0rem;
-    color: #ccc;
+    color: #b2becd;
     font-size: 1.4rem;
     line-height: 150%;
 }

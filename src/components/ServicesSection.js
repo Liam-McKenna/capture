@@ -28,36 +28,48 @@ const ServicesSection = () => {
     >
       <Description>
         <h2>
-          Tech Stack <span>&</span> skills
+          Education <span>&</span> Certs
         </h2>
         <Cards>
           <Card>
             <div className="icon">
               <img src={clock} alt="Clock" />
-              <h3>Another Section</h3>
+              <h3>DIT Degree</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet, c</p>
+            <p>
+              1:1 Honours degree in Information systems, Software Engineering,
+              Machine Learning, Web Applications, Databases and Cloud Systems
+            </p>
           </Card>
           <Card>
             <div className="icon">
               <img src={teamwork} alt="teamwork" />
-              <h3>teamwork</h3>
+              <h3>React</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectet</p>
+            <p>
+              I know React like a boss and all the react stuff i learned lol
+              more text for this part
+            </p>
           </Card>
           <Card>
             <div className="icon">
               <img src={diaphragm} alt="diaphragm" />
-              <h3>diaphragm</h3>
+              <h3>Python</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet,</p>
+            <p>
+              I'm a python OOP god with machine learning AI laser beams on
+              sharks that are gonna take over the frickin' world
+            </p>
           </Card>
           <Card>
             <div className="icon">
               <img src={money} alt="money" />
-              <h3>Affordable</h3>
+              <h3>Database</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>
+              my database skillz would be able to challenge the eagle to a game
+              of Yu Gu Oh
+            </p>
           </Card>
         </Cards>
       </Description>

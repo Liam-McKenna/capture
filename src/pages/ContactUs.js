@@ -13,7 +13,6 @@ const ContactUs = () => {
       variants={pageAnimation}
       initial="hidden"
       animate="show"
-      style={{ background: "#fff" }}
     >
       <Title>
         <Hide>
@@ -24,19 +23,19 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send Us a Message</h2>
+            <h2>Send Us a Message: Chat System TBA </h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send Email</h2>
+            <h2>Send Email: liam.zendesign@gmail.com</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Social Media</h2>
+            <h2>Social Media: Business Socials TBA</h2>
           </Social>
         </Hide>
       </div>
@@ -47,7 +46,7 @@ const ContactUs = () => {
 
 const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
-  color: #353535;
+  color: white;
   min-height: 90vh;
   @media (max-width: 1500px) {
     padding: 2rem;
@@ -57,7 +56,7 @@ const ContactStyle = styled(motion.div)`
 
 const Title = styled.div`
   margin-bottom: 4rem;
-  color: black;
+  color: white;
   @media (max-width: 1500px) {
     margin-top: 5rem;
   }
@@ -71,7 +70,7 @@ const Circle = styled.div`
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
-  background-color: #353535;
+  background-color: white;
 `;
 
 const Social = styled(motion.div)`

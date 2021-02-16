@@ -44,7 +44,7 @@ const ServicesSection = () => {
           <Card>
             <div className="icon">
               <img src={teamwork} alt="teamwork" />
-              <h3>React</h3>
+              <h3>React & Redux Course</h3>
             </div>
             <p>
               I know React like a boss and all the react stuff i learned lol
@@ -67,8 +67,8 @@ const ServicesSection = () => {
               <h3>Database</h3>
             </div>
             <p>
-              my database skillz would be able to challenge the eagle to a game
-              of Yu Gu Oh
+              If Big data and Jeff besoz had a baby and called it Elon Musk then
+              my database skillz
             </p>
           </Card>
         </Cards>

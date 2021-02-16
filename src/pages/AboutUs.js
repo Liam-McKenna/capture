@@ -1,5 +1,6 @@
 import React from "react";
 import AboutSection from "../components/AboutSection";
+import AboutIntro from "../components/AboutIntro";
 import ServicesSection from "../components/ServicesSection";
 import FaqSection from "../components/FaqSection";
 import ScrollTop from "../components/ScrollTop";
@@ -18,6 +19,7 @@ const AboutUs = () => {
       <AboutSection />
       <ServicesSection />
       <FaqSection />
+
       <ScrollTop />
     </motion.div>
   );

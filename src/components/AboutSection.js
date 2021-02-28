@@ -27,11 +27,24 @@ const AboutSection = () => {
           </Hide>
         </motion.div>
         <motion.p variants={fade}>
-          MERN full stack developer based in Dublin. Degree in Information
-          Systems encompassing Software Engineering, Machine Learning, Web
-          Applications, Databases and Cloud Systems
+          Full stack developer based in Dublin. Degree in Information Systems
+          encompassing Software Engineering Web Applications, Databases, Machine
+          Learning, and Cloud Systems
         </motion.p>
-        <motion.button variants={fade}>Contact Me</motion.button>
+
+        <motion.a className="phoneCall" href="tel:+1800229933" variants={fade}>
+          Projects
+        </motion.a>
+        <motion.a className="phoneCall" href="tel:+1800229933" variants={fade}>
+          Download Resume
+        </motion.a>
+        <motion.a
+          className="phoneCall"
+          href="mailto:liam@zendesign@gmail.com"
+          variants={fade}
+        >
+          Contact
+        </motion.a>
       </Description>
 
       <IntroBio variants={photoAnim} src={home1} alt="ProfilePhoto">
@@ -39,9 +52,10 @@ const AboutSection = () => {
           <p className="cardText">
             TECH STACK<br></br> {"{ "}
             <br></br>
-            &nbsp;&nbsp;&nbsp;&nbsp; Frontend: [Javascript, ReactJS, NextJS],
+            &nbsp;&nbsp;&nbsp;&nbsp; Frontend: [Javascript, ReactJS],
             <br></br>
-            &nbsp;&nbsp;&nbsp;&nbsp; Backend: [MongoDB, Express, Node],
+            &nbsp;&nbsp;&nbsp;&nbsp; Backend: [MongoDB, Express, Node, NextJS,
+            Firebase],
             <br></br>
             {" }"}
           </p>

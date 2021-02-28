@@ -105,6 +105,7 @@ const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
+  transition: all 500ms ease;
 
   h2 {
     color: white;

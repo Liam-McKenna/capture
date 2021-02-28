@@ -13,6 +13,10 @@ html{
         font-size: 75%;
     }
     
+    @media (max-width: 800px){
+        font-size: 55%;
+    }
+    
 }
 
 
@@ -24,23 +28,30 @@ body{
     overflow-x: hidden;
 }
 
-button{
+.phoneCall{
+margin: 1rem;
+text-decoration: none;
 font-weight:bold;
-font-size: 1.1.rem;
+font-size: 1.1rem;
 cursor: cursor;
 padding: 1rem 2rem;
 border: 3px solid #d9235a;
 background:transparent;
 color:white;
-transition: all 3.5s ease;
+transition: all .3s ease;
 font-family: 'inter', sans-serif;
 
 &:hover{
     background-color: #d9235a;
     color:white;
     }
-  
+    
+&:active {
+    outline: none;
+   
 }
+}
+
 
 h2{
     font-weight: lighter;

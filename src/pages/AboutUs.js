@@ -1,8 +1,8 @@
 import React from "react";
 import AboutSection from "../components/AboutSection";
 import AboutIntro from "../components/AboutIntro";
-import ServicesSection from "../components/ServicesSection";
-import FaqSection from "../components/FaqSection";
+import EduCerts from "../components/EduCerts";
+import WorkExp from "../components/WorkExp";
 import ScrollTop from "../components/ScrollTop";
 //framer Motion
 import { motion } from "framer-motion";
@@ -17,8 +17,8 @@ const AboutUs = () => {
       animate="show"
     >
       <AboutSection />
-      <ServicesSection />
-      <FaqSection />
+      <EduCerts />
+      <WorkExp />
 
       <ScrollTop />
     </motion.div>

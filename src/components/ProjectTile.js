@@ -26,6 +26,8 @@ const TileContainer = styled.div`
   width: 490px;
   height: 384px;
   margin: 2rem;
+  display: flex;
+  justify-content: center;
 
   .cardDetails {
     z-index: 3;
@@ -79,6 +81,13 @@ const TileContainer = styled.div`
     border-radius: 15px;
     transition: all 500ms ease;
     //border: 0.1px solid;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 55%;
+    .card {
+      width: 95vw;
+    }
   }
 `;
 

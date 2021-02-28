@@ -6,10 +6,10 @@ import { AnimateSharedLayout, motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { scrollReveal } from "../animation";
 
-const FaqSection = () => {
+const WorkExp = () => {
   const [element, controls] = useScroll();
   return (
-    <Faq
+    <Exp
       variants={scrollReveal}
       ref={element}
       animate={controls}
@@ -125,11 +125,11 @@ const FaqSection = () => {
           </div>
         </Toggle>
       </AnimateSharedLayout>
-    </Faq>
+    </Exp>
   );
 };
 
-const Faq = styled(About)`
+const Exp = styled(About)`
   display: block;
   span {
     display: block;
@@ -156,4 +156,4 @@ const Faq = styled(About)`
   }
 `;
 
-export default FaqSection;
+export default WorkExp;

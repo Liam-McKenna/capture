@@ -16,7 +16,7 @@ import { scrollReveal } from "../animation";
 //functions
 import { useScroll } from "./useScroll";
 
-const ServicesSection = () => {
+const EduCerts = () => {
   const [element, controls] = useScroll();
 
   return (
@@ -73,9 +73,6 @@ const ServicesSection = () => {
           </Card>
         </Cards>
       </Description>
-      <Image>
-        <img src={home2} alt="home2" />
-      </Image>
     </Services>
   );
 };
@@ -112,4 +109,4 @@ const Card = styled.div`
   }
 `;
 
-export default ServicesSection;
+export default EduCerts;

@@ -6,6 +6,7 @@ import logo from "../img/lmklogo.svg";
 
 const NavUltra = () => {
   const { pathname } = useLocation();
+  console.log(pathname);
   return (
     <NavUltraContainer>
       <div className="navbar">
@@ -38,7 +39,6 @@ const NavUltra = () => {
               <span className="link-text">About</span>
             </Link>
           </li>
-
           <li className="nav-item">
             <Link to="/work" className="navlink">
               <svg

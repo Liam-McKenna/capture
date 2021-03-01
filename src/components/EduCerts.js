@@ -1,14 +1,11 @@
 import React from "react";
 //import icons
-import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
+
 import college from "../img/collegeIcon.svg";
-import moreicon from "../img/more-icon.svg";
-import home2 from "../img/home2.png";
 
 //styles
 import styled from "styled-components";
-import { About, Description, Image, Hide } from "../styles";
+import { About, Description } from "../styles";
 
 //Animations
 import { scrollReveal } from "../animation";

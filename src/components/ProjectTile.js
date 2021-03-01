@@ -1,10 +1,13 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 import project1 from "../img/projectthumbnail1.PNG";
 import styled from "styled-components";
 
 const ProjectTile = ({ projectDetails }) => {
   const tagList = projectDetails.tags.map((tag) => (
-    <li style={{ backgroundColor: tag.tagColour }}>{tag.tagname}</li>
+    <li key={uuidv4()} style={{ backgroundColor: tag.tagColour }}>
+      {tag.tagname}
+    </li>
   ));
 
   return (

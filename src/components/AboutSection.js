@@ -1,11 +1,11 @@
 import React from "react";
 import home1 from "../img/home1.png";
 //Styled
-import { About, Description, Image, Hide } from "../styles";
+import { About, Description, Hide } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
-import Wave from "./Wave";
+
 import styled from "styled-components";
 
 //change name to <Liam McKenna  />
@@ -171,6 +171,10 @@ const IntroBio = styled(motion.div)`
     justify-content: center;
     transition: all 500ms ease;
 
+    .cardContainer {
+      width: 100%;
+    }
+
     .bioContainer {
       display: flex;
       align-items: center;
@@ -222,14 +226,14 @@ const IntroBio = styled(motion.div)`
 
     .circle1 {
       top: 7rem;
-      right: 14rem;
+      right: 4rem;
       width: 105px;
       height: 105px;
       transition: all 500ms ease;
     }
     .circle2 {
       top: 5rem;
-      left: 18rem;
+      left: 10rem;
       width: 71px;
       height: 71px;
       transition: all 500ms ease;

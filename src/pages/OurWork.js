@@ -7,22 +7,10 @@ import { ProjectData } from "../projectData";
 import ProjectTile from "../components/ProjectTile";
 
 //images
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
-import project1 from "../img/projectthumbnail1.PNG";
 
 //framer Motion & animations
 import { motion } from "framer-motion";
-import {
-  pageAnimation,
-  fade,
-  photoAnim,
-  lineAnim,
-  slider,
-  sliderContainer,
-  swoopSlider,
-} from "../animation";
+import { pageAnimation, slider, sliderContainer } from "../animation";
 import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
 

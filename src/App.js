@@ -2,14 +2,14 @@
 import GlobalStyle from "./components/GlobalStyle";
 
 //Import Navigation Bar
-import Nav from "./components/Nav";
+
 import NavUltra from "./components/NavUltra";
 
 //import pages
 import AboutUs from "./pages/AboutUs";
 import OurWork from "./pages/OurWork";
 import ContactUs from "./pages/ContactUs";
-import MovieDetail from "./pages/MovieDetail";
+
 import ProjectDetails from "./pages/ProjectDetails";
 //router
 import { Switch, Route, useLocation } from "react-router-dom";

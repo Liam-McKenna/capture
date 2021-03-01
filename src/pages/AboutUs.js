@@ -1,6 +1,6 @@
 import React from "react";
 import AboutSection from "../components/AboutSection";
-import AboutIntro from "../components/AboutIntro";
+import styled from "styled-components";
 import EduCerts from "../components/EduCerts";
 import WorkExp from "../components/WorkExp";
 import ScrollTop from "../components/ScrollTop";

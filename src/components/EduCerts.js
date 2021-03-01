@@ -97,7 +97,6 @@ const Cards = styled.div`
 `;
 
 const Card = styled.div`
-  z-index: 1;
   margin: 2rem;
   flex-basis: 25rem;
   justify-content: center;

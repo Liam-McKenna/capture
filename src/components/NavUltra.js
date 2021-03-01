@@ -198,10 +198,13 @@ const NavUltraContainer = styled.div`
 
   /* small screen */
   @media only screen and (max-width: 600px) {
+    svg {
+      transform: scale(1.5);
+    }
     .navbar {
       bottom: 0;
       width: 100vw;
-      height: 5rem;
+      height: 8rem;
     }
     .logo {
       display: none;
@@ -209,8 +212,9 @@ const NavUltraContainer = styled.div`
     .navbar-nav {
       flex-direction: row;
     }
-    .nav-link {
+    .navlink {
       justify-content: center;
+      align-items: center;
     }
 
     main {
@@ -221,6 +225,7 @@ const NavUltraContainer = styled.div`
   /* large screen */
   @media only screen and (min-width: 600px) {
     .navbar {
+      font-size: 75%;
       top: 0;
       width: 5rem;
       height: 100vh;

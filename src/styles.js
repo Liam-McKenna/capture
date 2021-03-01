@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 //Styled Components
 export const About = styled(motion.div)`
+  max-width: 100vw;
+  overflow-x: hidden;
   min-height: 80vh;
   display: flex;
   align-items: center;

@@ -183,35 +183,63 @@ const IntroBio = styled(motion.div)`
     .cardText {
       text-align: left;
     }
+  }
+  @media (max-width: 800px) {
+    .card {
+      width: 440px;
+      height: 300px;
+      transition: all 500ms ease;
+    }
 
-    @media (max-width: 800px) {
-      .card {
-        width: 440px;
-        height: 300px;
-        transition: all 500ms ease;
-      }
+    .circle1 {
+      top: -4rem;
+      right: 1rem;
+      width: 195px;
+      height: 195px;
+      transition: all 500ms ease;
+    }
+    .circle2 {
+      top: -1rem;
+      left: 6rem;
+      width: 101px;
+      height: 101px;
+      transition: all 500ms ease;
+    }
+    .circle3 {
+      bottom: -2rem;
+      left: 14rem;
+      width: 100px;
+      height: 100px;
+      transition: all 500ms ease;
+    }
+  }
+  @media (max-width: 600px) {
+    .card {
+      width: 360px;
+      height: 200px;
+      transition: all 500ms ease;
+    }
 
-      .circle1 {
-        top: -4rem;
-        right: 1rem;
-        width: 195px;
-        height: 195px;
-        transition: all 500ms ease;
-      }
-      .circle2 {
-        top: -1rem;
-        left: 6rem;
-        width: 101px;
-        height: 101px;
-        transition: all 500ms ease;
-      }
-      .circle3 {
-        bottom: -2rem;
-        left: 14rem;
-        width: 100px;
-        height: 100px;
-        transition: all 500ms ease;
-      }
+    .circle1 {
+      top: 7rem;
+      right: 14rem;
+      width: 105px;
+      height: 105px;
+      transition: all 500ms ease;
+    }
+    .circle2 {
+      top: 5rem;
+      left: 18rem;
+      width: 71px;
+      height: 71px;
+      transition: all 500ms ease;
+    }
+    .circle3 {
+      bottom: 5rem;
+      left: 24rem;
+      width: 100px;
+      height: 100px;
+      transition: all 500ms ease;
     }
   }
 `;

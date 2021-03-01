@@ -26,25 +26,34 @@ const AboutSection = () => {
             <motion.h2 variants={titleAnim}>Portfolio</motion.h2>
           </Hide>
         </motion.div>
-        <motion.p variants={fade}>
+        <motion.p className="aboutTxt" variants={fade}>
           Full stack developer based in Dublin. Degree in Information Systems
           encompassing Software Engineering Web Applications, Databases, Machine
           Learning, and Cloud Systems
         </motion.p>
-
-        <motion.a className="phoneCall" href="tel:+1800229933" variants={fade}>
-          Projects
-        </motion.a>
-        <motion.a className="phoneCall" href="tel:+1800229933" variants={fade}>
-          Download Resume
-        </motion.a>
-        <motion.a
-          className="phoneCall"
-          href="mailto:liam@zendesign@gmail.com"
-          variants={fade}
-        >
-          Contact
-        </motion.a>
+        <div className="introButtons">
+          <motion.a
+            className="phoneCall"
+            href="tel:+1800229933"
+            variants={fade}
+          >
+            Projects
+          </motion.a>
+          <motion.a
+            className="phoneCall"
+            href="tel:+1800229933"
+            variants={fade}
+          >
+            Download Resume
+          </motion.a>
+          <motion.a
+            className="phoneCall"
+            href="mailto:liam@zendesign@gmail.com"
+            variants={fade}
+          >
+            Contact
+          </motion.a>
+        </div>
       </Description>
 
       <IntroBio variants={photoAnim} src={home1} alt="ProfilePhoto">

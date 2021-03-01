@@ -20,8 +20,8 @@ const WorkExp = () => {
       </h2>
       <AnimateSharedLayout>
         <Toggle
-          title={"SOFTWARE DEVELOPER : CloudTech"}
-          timeframe={"DEC 2019 - AUG 2020."}
+          title={"SOFTWARE DEVELOPER."}
+          timeframe={"CloudTech: DEC 2019 - AUG 2020."}
         >
           <div className="answer">
             <p>
@@ -50,20 +50,20 @@ const WorkExp = () => {
         </Toggle>
 
         <Toggle
-          title={"Senior IT Support analyst : Hewlett-Packard Enterprise/DXC"}
-          timeframe={" - JUNE 2018 - DEC 19."}
+          title={"SENIOR IT SUPPORT TECHNICIAN."}
+          timeframe={"Hewlett-Packard Enterprise/DXC: JUNE 2018 - DEC 2019."}
         >
           <div className="answer">
             <p layout>
               Main Duties:
               <br />
-              <br /> • Specialist IT support to first level agents. •resolving
-              major issues with clients software and hardware.•Active Directory
+              <br /> • Specialist IT support to first level agents. •Resolving
+              major issues with clients software and hardware. •Active Directory
               provisioning. •Coaching & mentorship of peers. •Control of
               Knowledge Base.
               <br />
               <br />
-              Role Overview: Supporting all B2B IT issues and queries for St
+              Role Overview: Supporting all B2B IT issues and queries for St
               James Place Wealth Management, FTSE 100 listed company. This role
               has given me greater control over supporting software for the
               client including Active Directory provisioning (Distribution List
@@ -78,8 +78,8 @@ const WorkExp = () => {
         </Toggle>
 
         <Toggle
-          title={"Audio Visual Technician. : SonicsAVI"}
-          timeframe={" - AUG 2017 - JUNE 2018"}
+          title={"AUDIO VISUAL TECHNICIAN."}
+          timeframe={"SonicsAVI: AUG 2017 - JUNE 2018"}
         >
           <div className="answer">
             <p>
@@ -101,8 +101,8 @@ const WorkExp = () => {
         </Toggle>
 
         <Toggle
-          title={"GRAPHIC DESIGN & PRODUCTION MANAGER : Sin Nightclub"}
-          timeframe={"MAY 2012 - AUG 2017"}
+          title={"GRAPHIC DESIGN & PRODUCTION MANAGER."}
+          timeframe={"Sin Nightclub: MAY 2012 - AUG 2017"}
         >
           <div className="answer">
             <p>
@@ -145,7 +145,7 @@ const Exp = styled(About)`
     width: 100%;
   }
   .question {
-    padding: 3rem 0rem;
+    padding: 1rem 0rem;
     cursor: pointer;
   }
   .answer {

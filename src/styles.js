@@ -11,6 +11,7 @@ export const About = styled(motion.div)`
   padding: 5rem 10rem;
   color: white;
   @media (max-width: 1300px) {
+    min-height: 50vh;
     display: block;
     padding: 2rem 2rem;
     text-align: center;
@@ -21,6 +22,10 @@ export const Description = styled.div`
   flex: 1;
   padding-right: 5rem;
   z-index: 2;
+  .aboutTxt {
+    padding: 3rem 0rem;
+  }
+
   h2 {
     font-weight: lighter;
   }
@@ -30,6 +35,12 @@ export const Description = styled.div`
     button {
       margin: 2rem 0rem 5rem 0rem;
     }
+  }
+  .introButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 `;
 

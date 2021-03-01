@@ -74,7 +74,7 @@ a{
     font-size:1.1rem;
 }
 p{
-    padding: 3rem 0rem;
+    padding: 1rem 0rem;
     color: #b2becd;
     font-size: 1.4rem;
     line-height: 150%;

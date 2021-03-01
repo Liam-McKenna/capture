@@ -2,8 +2,8 @@ import React from "react";
 //import icons
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
-import teamwork from "../img/teamwork.svg";
+import college from "../img/collegeIcon.svg";
+import moreicon from "../img/more-icon.svg";
 import home2 from "../img/home2.png";
 
 //styles
@@ -15,6 +15,7 @@ import { scrollReveal } from "../animation";
 
 //functions
 import { useScroll } from "./useScroll";
+import Toggle from "./Toggle";
 
 const EduCerts = () => {
   const [element, controls] = useScroll();
@@ -27,49 +28,38 @@ const EduCerts = () => {
       ref={element}
     >
       <Description>
-        <h2>
-          Education <span>&</span> Certs
-        </h2>
+        <div className="title">
+          <img src={college} alt="" />
+          <h2>
+            Education <span>&</span> Certs
+          </h2>
+        </div>
         <Cards>
           <Card>
-            <div className="icon">
-              <img src={clock} alt="Clock" />
-              <h3>DIT Degree</h3>
-            </div>
-            <p>
-              1:1 Honours degree in Information systems, Software Engineering,
-              Machine Learning, Web Applications, Databases and Cloud Systems
-            </p>
+            <Toggle
+              title={"Information Technology"}
+              timeframe={"Honours Degree / 2018-2022"}
+            >
+              <p>
+                1:1 higher honours degree in Information Systems and Information
+                Technology at Technology University Dublin encompassing Software
+                Engineering Web Applications, Databases, Machine Learning, and
+                Cloud Systems.
+              </p>
+            </Toggle>
           </Card>
+
           <Card>
-            <div className="icon">
-              <img src={teamwork} alt="teamwork" />
-              <h3>React & Redux Course</h3>
-            </div>
-            <p>
-              I know React like a boss and all the react stuff i learned lol
-              more text for this part
-            </p>
-          </Card>
-          <Card>
-            <div className="icon">
-              <img src={diaphragm} alt="diaphragm" />
-              <h3>Python</h3>
-            </div>
-            <p>
-              I'm a python OOP god with machine learning AI laser beams on
-              sharks that are gonna take over the frickin' world
-            </p>
-          </Card>
-          <Card>
-            <div className="icon">
-              <img src={money} alt="money" />
-              <h3>Database</h3>
-            </div>
-            <p>
-              If Big data and Jeff besoz had a baby and called it Elon Musk then
-              my database skillz
-            </p>
+            <Toggle
+              title={"Software Development"}
+              timeframe={"Lvl 5 Certificate / 2017-2018 "}
+            >
+              <p>
+                1:1 FETAC Lvl 5 Certificate in Software Development at Crumlin
+                College encompassing Web Dev Computer Mathamatics and Software
+                Development
+              </p>
+            </Toggle>
           </Card>
         </Cards>
       </Description>
@@ -82,30 +72,42 @@ const Services = styled(About)`
     padding-bottom: 5rem;
   }
   p {
-    width: 70%;
-    padding: 2rem 0rem 4rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 8rem;
+    }
   }
 `;
 
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  justify-content: center;
   @media (max-width: 1300px) {
     justify-content: space-around;
   }
 `;
 
 const Card = styled.div`
-  flex-basis: 20rem;
-  .icon {
-    display: flex;
-    align-items: center;
-    h3 {
-      margin-left: 1rem;
-      background: white;
-      color: black;
-      padding: 1rem;
-    }
+  z-index: 1;
+  margin: 2rem;
+  flex-basis: 25rem;
+  justify-content: center;
+  justify-content: space-around;
+
+  h3 {
+    margin-left: 1rem;
+    background: white;
+    color: black;
+    padding: 1rem;
   }
 `;
 

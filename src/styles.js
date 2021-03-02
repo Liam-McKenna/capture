@@ -31,6 +31,10 @@ export const Description = styled.div`
   h2 {
     font-weight: lighter;
   }
+
+  .projectsLink {
+    display: flex;
+  }
   @media (max-width: 1300px) {
     padding: 2rem 2rem;
 

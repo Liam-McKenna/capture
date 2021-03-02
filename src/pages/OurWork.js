@@ -19,6 +19,13 @@ const OurWork = () => {
   const [element2, controls2] = useScroll();
 
   const [projects, setProjects] = useState(ProjectData);
+  console.log(projects.length);
+
+  const ProjList = projects.map((proj) => (
+    <Link to={proj.url}>
+      <ProjectTile projectDetails={proj} />
+    </Link>
+  ));
 
   return (
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
@@ -29,20 +36,7 @@ const OurWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
 
-      <Flexcontainer>
-        <Link to="/work/project1">
-          <ProjectTile projectDetails={projects[0]} />
-        </Link>
-        <Link to="/work/project2">
-          <ProjectTile projectDetails={projects[1]} />
-        </Link>
-        <Link to="/work/project1">
-          <ProjectTile projectDetails={projects[0]} />
-        </Link>
-        <Link to="/work/project2">
-          <ProjectTile projectDetails={projects[1]} />
-        </Link>
-      </Flexcontainer>
+      <Flexcontainer>{ProjList}</Flexcontainer>
 
       {/* 
       <Movie>

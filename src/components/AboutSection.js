@@ -5,7 +5,7 @@ import { About, Description, Hide } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../animation";
-
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 //change name to <Liam McKenna  />
@@ -32,16 +32,20 @@ const AboutSection = () => {
           Learning, and Cloud Systems
         </motion.p>
         <div className="introButtons">
+          <Link to="/work" className="projectsLink">
+            <motion.a
+              className="phoneCall"
+              href="tel:+1800229933"
+              variants={fade}
+            >
+              Projects
+            </motion.a>
+          </Link>
+
           <motion.a
             className="phoneCall"
-            href="tel:+1800229933"
-            variants={fade}
-          >
-            Projects
-          </motion.a>
-          <motion.a
-            className="phoneCall"
-            href="tel:+1800229933"
+            href="../documents/LiamCV2021.pdf"
+            download
             variants={fade}
           >
             Download Resume

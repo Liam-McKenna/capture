@@ -43,6 +43,8 @@ const TileContainer = styled.div`
 
     img {
       width: 100%;
+      height: 15rem;
+      object-fit: cover;
       border-radius: 15px;
     }
     h1 {
